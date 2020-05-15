@@ -1,4 +1,5 @@
 ﻿using System;
+using ExpensesTracker.Models;
 using ExpensesTracker.Print;
 
 namespace ExpensesTracker
@@ -16,28 +17,15 @@ namespace ExpensesTracker
                 switch (option)
                 {
                     case ConsoleKey.D1:
-                        Console.WriteLine("Add money");
+                        Finance.Create();
                         break;
                     case ConsoleKey.D2:
                         return;
-                        break;
+        
 
                 }
              }
            
-            /*  while (true)
-              {
-                  string test = Console.ReadLine();
-
-                  if (test == "test")
-                  {
-                      Console.WriteLine("work!");
-                  } else
-                  {
-                      return;
-                  }
-
-              }*/
         }
     }
 }
