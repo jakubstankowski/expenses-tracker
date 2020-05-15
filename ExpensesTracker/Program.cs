@@ -1,4 +1,5 @@
 ﻿using System;
+using ExpensesTracker.Core;
 using ExpensesTracker.Models;
 using ExpensesTracker.Print;
 
@@ -8,16 +9,17 @@ namespace ExpensesTracker
     {
         static void Main(string[] args)
         {
-         
+            Budget incomes = new Budget("Incomes");
+
             ConsolePrinter.Menu();
             var option = Console.ReadKey().Key;
-
+           
             while (true)
             {
-                switch (option)
+               switch (option)
                 {
                     case ConsoleKey.D1:
-                        Finance.Create();
+                        Add(incomes);
                         break;
                     case ConsoleKey.D2:
                         return;
@@ -26,6 +28,19 @@ namespace ExpensesTracker
                 }
              }
            
+        }
+
+        public static void Add(Budget budget)
+        {
+            try
+            {
+                string elementAdded = budget.Add(Finance.Create());
+                Console.WriteLine(elementAdded);
+            } catch(Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            
         }
     }
 }
