@@ -8,11 +8,11 @@ namespace ExpensesTracker.Models
     class Finance : IFinance
     {
             
-        public double Value { get; set; }
+        public decimal Value { get; set; }
         public string Description { get; set; }
 
 
-        public Finance(double value, string description)
+        public Finance(decimal value, string description)
         {
             this.Value = value;
             this.Description = description;
@@ -20,16 +20,12 @@ namespace ExpensesTracker.Models
 
         public static Finance Create()
         {
-
-           
-                 Console.Write("Value: ");
-                double value = double.Parse(Console.ReadLine());
+                Console.Write("Value: ");
+                decimal value = decimal.Parse(Console.ReadLine());
                 Console.Write("Description: ");
                 string description = Console.ReadLine();
                 Finance finance = new Finance(value, description);
                 return finance;
-           
-           
         }
 
 

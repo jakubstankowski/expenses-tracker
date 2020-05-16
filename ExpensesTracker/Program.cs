@@ -7,11 +7,12 @@ namespace ExpensesTracker
 {
     class Program
     {
+        private static ConsolePrinter consolePrinter = new ConsolePrinter();
         static void Main(string[] args)
         {
+            
             Budget incomes = new Budget("Incomes");
-
-            ConsolePrinter.Menu();
+            consolePrinter.Menu();
             var option = Console.ReadKey().Key;
            
             while (true)
@@ -36,6 +37,9 @@ namespace ExpensesTracker
             {
                 string elementAdded = budget.Add(Finance.Create());
                 Console.WriteLine(elementAdded);
+                consolePrinter.Total(budget);
+
+
             } catch(Exception e)
             {
                 Console.WriteLine(e);

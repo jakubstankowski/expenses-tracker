@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using ExpensesTracker.Contracts;
 using ExpensesTracker.Models;
@@ -25,9 +26,9 @@ namespace ExpensesTracker.Core
         public string Add(Finance finance)
         {
             list.Add(finance);
-
             return "Success add!";
         }
+        
 
         public string Delete(string description)
         {
@@ -36,7 +37,7 @@ namespace ExpensesTracker.Core
 
         public decimal Total()
         {
-            throw new NotImplementedException();
+            return this.list.Select(x => x.Value).Sum();
         }
     }
 }
