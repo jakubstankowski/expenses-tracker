@@ -10,7 +10,7 @@ namespace ExpensesTracker.Print
     {
         public  void Menu()
         {
-            Console.WriteLine("Welcome to expenses tracker!");
+            Console.WriteLine("Chose option:");
             Console.WriteLine("1. Set your money");
             Console.WriteLine("2. Exit program");
           
@@ -25,12 +25,20 @@ namespace ExpensesTracker.Print
        
         public void SubMenu()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Chose option:");
+            Console.WriteLine("1. Add");
+            Console.WriteLine("2. Delete");
+            Console.WriteLine("3. Back");
         }
 
         public void Total(Budget budget)
         {
             Console.WriteLine($"Total: {budget.Total()} $");
+        }
+
+        public void PrintLine(int width)
+        {
+            Console.WriteLine($"+{new string('-', width)}+");
         }
     }
 }

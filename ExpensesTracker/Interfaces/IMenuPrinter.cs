@@ -11,6 +11,8 @@ namespace ExpensesTracker.Contracts
          void SubMenu();
          void Budget(Budget budget, decimal incomesTotal);
 
+        void PrintLine(int width);
+
 
     }
 }
