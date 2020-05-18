@@ -10,10 +10,15 @@ namespace ExpensesTracker
         private static ConsolePrinter consolePrinter = new ConsolePrinter();
         static void Main(string[] args)
         {
-            
-           while (true)
+            Budget incomes = new Budget("Incomes");
+            Budget expenses = new Budget("Expenses");
+           
+
+
+            while (true)
             {
-                Budget incomes = new Budget("Incomes");
+                decimal balance = Balance(incomes, expenses);
+               
                 consolePrinter.Menu();
                 var option = Console.ReadKey().Key;
                 Console.Clear();
@@ -24,8 +29,14 @@ namespace ExpensesTracker
                         SubmenuBudget(incomes);
                         break;
                     case ConsoleKey.D2:
+                        SubmenuBudget(expenses);
+                        break;
+                    case ConsoleKey.D3:
+                        consolePrinter.WholeBudget(incomes, expenses, balance);
+                        break;
+                    case ConsoleKey.D4:
                         return;
-        
+
 
                 }
              }
@@ -67,6 +78,12 @@ namespace ExpensesTracker
                 Console.WriteLine(e);
             }
             
+        }
+
+        public static decimal Balance(Budget incomes, Budget expenses)
+        {
+    
+            return incomes.Total() - expenses.Total();
         }
     }
 }

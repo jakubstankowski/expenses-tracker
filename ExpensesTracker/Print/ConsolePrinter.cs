@@ -12,7 +12,9 @@ namespace ExpensesTracker.Print
         {
             Console.WriteLine("Chose option:");
             Console.WriteLine("1. Set your money");
-            Console.WriteLine("2. Exit program");
+            Console.WriteLine("2. Set expenses");
+            Console.WriteLine("3. Budget Print");
+            Console.WriteLine("4. Close");
           
         }
 
@@ -39,6 +41,11 @@ namespace ExpensesTracker.Print
         public void PrintLine(int width)
         {
             Console.WriteLine($"+{new string('-', width)}+");
+        }
+
+        public void WholeBudget(Budget incomes, Budget expenses, decimal balance)
+        {
+            Console.WriteLine("Total balance: " + balance);
         }
     }
 }
