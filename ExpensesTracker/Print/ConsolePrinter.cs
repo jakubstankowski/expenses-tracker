@@ -10,7 +10,7 @@ namespace ExpensesTracker.Print
     {
         public  void Menu()
         {
-            Console.WriteLine("Chose option:");
+            Console.WriteLine("Choose option:");
             Console.WriteLine("1. Incomes");
             Console.WriteLine("2. Expenses");
             Console.WriteLine("3. Budget Print");
@@ -64,9 +64,9 @@ namespace ExpensesTracker.Print
         {
             for (int i = 0; i < budget.Count; i++)
             {
-                string financeDescription = budget.GetFinanceCategory()[i];
+                string financeCategory = budget.GetFinanceCategory()[i];
                 decimal financeValue = budget.GetFinanceValues()[i];
-                Console.WriteLine($"Value: {financeValue} Description: {financeDescription}");
+                Console.WriteLine($"Value: {financeValue} | Category: {financeCategory}");
             }
         }
 
@@ -88,6 +88,7 @@ namespace ExpensesTracker.Print
         }
         void IncomesCategory()
         {
+            Console.WriteLine("Choose incomes category: ");
             Console.WriteLine("1. Work");
             Console.WriteLine("2. Other");
 
