@@ -11,9 +11,8 @@ namespace ExpensesTracker.Contracts
          void SubMenu();
          void Budget(Budget budget);
          void PrintLine(int width);
-
-        
-
-
+        void CategoryMenu(string type);
+        void ExpensesCategory();
+        void IncomesCategory();
     }
 }

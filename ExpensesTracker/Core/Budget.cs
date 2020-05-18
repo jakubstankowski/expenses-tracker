@@ -40,9 +40,9 @@ namespace ExpensesTracker.Core
             return this.list.Select(x => x.Value).Sum();
         }
 
-        public List<string> GetFinanceDescriptions()
+        public List<string> GetFinanceCategory()
         {
-            return this.list.Select(x => x.Description).ToList();
+            return this.list.Select(x => x.Category).ToList();
         }
 
         public List<decimal> GetFinanceValues()

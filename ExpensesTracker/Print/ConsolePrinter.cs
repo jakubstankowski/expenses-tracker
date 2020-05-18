@@ -37,6 +37,8 @@ namespace ExpensesTracker.Print
             Console.WriteLine("3. Back");
         }
 
+       
+
         public void Total(Budget budget)
         {
             Console.WriteLine($"Total: {budget.Total()} $");
@@ -62,11 +64,43 @@ namespace ExpensesTracker.Print
         {
             for (int i = 0; i < budget.Count; i++)
             {
-                string financeDescription = budget.GetFinanceDescriptions()[i];
+                string financeDescription = budget.GetFinanceCategory()[i];
                 decimal financeValue = budget.GetFinanceValues()[i];
                 Console.WriteLine($"Value: {financeValue} Description: {financeDescription}");
             }
         }
 
+        public void CategoryMenu(string type)
+        {
+           if(type == "incomes")
+            {
+                IncomesCategory();
+            } else
+            {
+                ExpensesCategory();
+            }
+
+        }
+
+        void ExpensesCategory()
+        {
+            
+        }
+        void IncomesCategory()
+        {
+            Console.WriteLine("1. Work");
+            Console.WriteLine("2. Other");
+
+        }
+
+        void IMenuPrinter.ExpensesCategory()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IMenuPrinter.IncomesCategory()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -54,7 +54,7 @@ namespace ExpensesTracker
              switch (option)
             {
                 case ConsoleKey.D1:
-                    Add(budget);
+                    SubMenuCategory(budget);
                     break;
                 case ConsoleKey.D3:
                     break;
@@ -63,18 +63,47 @@ namespace ExpensesTracker
             }
 
         }
-        public static void Add(Budget budget)
+
+        private static void SubMenuCategory(Budget budget)
+        {
+            Console.Clear();
+            consolePrinter.CategoryMenu(budget.Name.ToLower());
+
+            if (budget.Name.ToLower() == "incomes")
+            {
+                IncomesCategory(budget);
+            }
+
+        }
+
+        private static void IncomesCategory(Budget budget)
+        {
+           
+            var option = Console.ReadKey().Key;
+            switch (option)
+            {
+                case ConsoleKey.D1:
+                    Add(budget, "work");
+                    break;
+                case ConsoleKey.D2:
+                    Add(budget, "others");
+                    break;
+                case ConsoleKey.D3:
+                    break;
+
+
+            }
+        }
+
+        public static void Add(Budget budget, string category)
         {
             try
             {
-
                 consolePrinter.Budget(budget);
-                string elementAdded = budget.Add(Finance.Create());
+                string elementAdded = budget.Add(Finance.Create(category));
                 Console.WriteLine(elementAdded);
                 consolePrinter.Total(budget);
-                
-
-            } catch(Exception e)
+             } catch(Exception e)
             {
                 Console.WriteLine(e);
             }

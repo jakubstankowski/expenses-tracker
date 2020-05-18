@@ -7,6 +7,6 @@ namespace ExpensesTracker.Contracts
     interface IFinance
     {
         decimal Value { get; set; }
-        string Description { get; set; }
+        string Category { get; set; }
     }
 }
