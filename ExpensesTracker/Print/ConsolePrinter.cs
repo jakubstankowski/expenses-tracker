@@ -11,17 +11,21 @@ namespace ExpensesTracker.Print
         public  void Menu()
         {
             Console.WriteLine("Chose option:");
-            Console.WriteLine("1. Set your money");
-            Console.WriteLine("2. Set expenses");
+            Console.WriteLine("1. Incomes");
+            Console.WriteLine("2. Expenses");
             Console.WriteLine("3. Budget Print");
             Console.WriteLine("4. Close");
           
         }
 
       
-        public void Budget(Budget budget, decimal incomesTotal)
+        public void Budget(Budget budget)
         {
-            throw new NotImplementedException();
+            this.PrintLine(53);
+            this.PrintTotal(budget);
+            this.PrintLine(53);
+            this.PrintBudget(budget);
+            this.PrintLine(53);
         }
 
        
@@ -47,5 +51,22 @@ namespace ExpensesTracker.Print
         {
             Console.WriteLine("Total balance: " + balance);
         }
+
+        private void PrintTotal(Budget budget)
+        {
+            Console.WriteLine($"TOTAL {budget.Name.ToUpper()}: {budget.Total()} $.");
+            
+        }
+
+        private void PrintBudget(Budget budget)
+        {
+            for (int i = 0; i < budget.Count; i++)
+            {
+                string financeDescription = budget.GetFinanceDescriptions()[i];
+                decimal financeValue = budget.GetFinanceValues()[i];
+                Console.WriteLine($"Value: {financeValue} Description: {financeDescription}");
+            }
+        }
+
     }
 }

@@ -67,8 +67,9 @@ namespace ExpensesTracker
         {
             try
             {
+
+                consolePrinter.Budget(budget);
                 string elementAdded = budget.Add(Finance.Create());
-                consolePrinter.PrintLine(52);
                 Console.WriteLine(elementAdded);
                 consolePrinter.Total(budget);
                 

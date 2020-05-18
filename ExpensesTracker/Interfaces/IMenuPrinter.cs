@@ -9,10 +9,10 @@ namespace ExpensesTracker.Contracts
     {
          void Menu();
          void SubMenu();
-         void Budget(Budget budget, decimal incomesTotal);
+         void Budget(Budget budget);
          void PrintLine(int width);
 
-       
+        
 
 
     }

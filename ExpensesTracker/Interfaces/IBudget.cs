@@ -17,5 +17,10 @@ namespace ExpensesTracker.Contracts
 
         decimal Total();
 
+        List<string> GetFinanceDescriptions();
+
+        List<decimal> GetFinanceValues();
+
+
     }
 }

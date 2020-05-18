@@ -14,7 +14,7 @@ namespace ExpensesTracker.Core
 
         public string Name { get; }
 
-        public int Count => throw new NotImplementedException();
+        public int Count => this.list.Count;
 
 
         public Budget(string name)
@@ -38,6 +38,16 @@ namespace ExpensesTracker.Core
         public decimal Total()
         {
             return this.list.Select(x => x.Value).Sum();
+        }
+
+        public List<string> GetFinanceDescriptions()
+        {
+            return this.list.Select(x => x.Description).ToList();
+        }
+
+        public List<decimal> GetFinanceValues()
+        {
+            return this.list.Select(x => x.Value).ToList();
         }
     }
 }
