@@ -43,9 +43,15 @@ namespace ExpensesTracker.Core
 
             Console.WriteLine($"{type} budget success loaded!");
         }
-        public string Delete(string description)
+        public string Delete(string ID)
         {
-            throw new NotImplementedException();
+            if (!this.list.Select(x => x.ID).Contains(ID))
+            {
+                throw new Exception("Finance not found!");
+            }
+            Finance finance = this.list.Find(x => x.ID == ID);
+            this.list.Remove(finance);
+            return "Successfully removed ";
         }
 
         public decimal Total()

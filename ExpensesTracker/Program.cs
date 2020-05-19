@@ -64,6 +64,9 @@ namespace ExpensesTracker
                 case ConsoleKey.D1:
                     SubMenuCategory(budget);
                     break;
+                case ConsoleKey.D2:
+                    Delete(budget);
+                    break;
                 case ConsoleKey.D3:
                     break;
 
@@ -161,6 +164,25 @@ namespace ExpensesTracker
             
         }
 
+        private static void Delete(Budget budget)
+        {
+            try
+            {
+                consolePrinter.Budget(budget);
+                consolePrinter.PrintLine(53);
+                Console.Write("ID: ");
+                string ID = Console.ReadLine().ToLower();
+                string elementRemoved = budget.Delete(ID);
+                Console.WriteLine(elementRemoved);
+                consolePrinter.Total(budget);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+
+        }
+
         public static decimal Balance(Budget incomes, Budget expenses)
         {
             return incomes.Total() - expenses.Total();
@@ -171,5 +193,7 @@ namespace ExpensesTracker
             incomes.AddTemplate("incomes");
             expenses.AddTemplate("expenses");
         }
+
+       
     }
 }
