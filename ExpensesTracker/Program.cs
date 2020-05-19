@@ -14,7 +14,6 @@ namespace ExpensesTracker
             Budget expenses = new Budget("Expenses");
            
 
-
             while (true)
             {
                 decimal balance = Balance(incomes, expenses);
@@ -35,6 +34,9 @@ namespace ExpensesTracker
                         consolePrinter.WholeBudget(incomes, expenses, balance);
                         break;
                     case ConsoleKey.D4:
+                        AddTemplate(incomes, expenses);
+                        break;
+                    case ConsoleKey.D5:
                         return;
 
 
@@ -42,6 +44,8 @@ namespace ExpensesTracker
              }
            
         }
+
+       
 
         private static void SubmenuBudget(Budget budget)
         {
@@ -156,6 +160,12 @@ namespace ExpensesTracker
         public static decimal Balance(Budget incomes, Budget expenses)
         {
             return incomes.Total() - expenses.Total();
+        }
+
+        public static void AddTemplate(Budget incomes, Budget expenses)
+        {
+            incomes.AddTemplate("incomes");
+            expenses.AddTemplate("expenses");
         }
     }
 }

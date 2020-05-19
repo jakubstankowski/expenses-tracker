@@ -30,6 +30,18 @@ namespace ExpensesTracker.Core
         }
         
 
+        public void AddTemplate(string type)
+        {
+            if(type == "incomes")
+            {
+                this.list.AddRange(Incomes.Template());
+            } else
+            {
+                this.list.AddRange(Expenses.Template());
+            }
+
+            Console.WriteLine($"{type} budget success loaded!");
+        }
         public string Delete(string description)
         {
             throw new NotImplementedException();

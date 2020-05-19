@@ -14,7 +14,8 @@ namespace ExpensesTracker.Print
             Console.WriteLine("1. Incomes");
             Console.WriteLine("2. Expenses");
             Console.WriteLine("3. Budget Print");
-            Console.WriteLine("4. Close");
+            Console.WriteLine("4. Load Template Budget");
+            Console.WriteLine("5. Close");
           
         }
 
@@ -51,7 +52,18 @@ namespace ExpensesTracker.Print
 
         public void WholeBudget(Budget incomes, Budget expenses, decimal balance)
         {
-            Console.WriteLine($"Total balance: {balance}$");
+            
+           
+            this.Budget(incomes);
+            this.Budget(expenses);
+            this.Balance(balance);
+
+        }
+
+        private void Balance(decimal balance)
+        {
+            Console.WriteLine("Total balance: " + balance);
+            this.PrintLine(53);
         }
 
         private void PrintTotal(Budget budget)
@@ -82,7 +94,7 @@ namespace ExpensesTracker.Print
 
         }
 
-        void ExpensesCategory()
+        public void ExpensesCategory()
         {
             Console.WriteLine("Choose expenses category: ");
             Console.WriteLine("1. Food");
@@ -96,7 +108,7 @@ namespace ExpensesTracker.Print
             Console.WriteLine("9. Others");
             Console.WriteLine("0. Back");
         }
-        void IncomesCategory()
+        public void IncomesCategory()
         {
             Console.WriteLine("Choose incomes category: ");
             Console.WriteLine("1. Work");
@@ -104,14 +116,6 @@ namespace ExpensesTracker.Print
             Console.WriteLine("3. Back");
          }
 
-        void IMenuPrinter.ExpensesCategory()
-        {
-            throw new NotImplementedException();
-        }
-
-        void IMenuPrinter.IncomesCategory()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

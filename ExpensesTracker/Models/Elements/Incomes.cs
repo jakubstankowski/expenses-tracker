@@ -12,16 +12,16 @@ namespace ExpensesTracker.Models
         {
         }
 
-        public static void  Create()
+       public static List<Incomes> Template()
         {
-            Console.WriteLine("INCOMES!");
-           /* Console.Write("Value: ");
-            decimal value = decimal.Parse(Console.ReadLine());
-            Console.Write("Description: ");
-            string category = Console.ReadLine();
-            Expenses expense = new Expenses(value, category);
-            return expense;*/
-        }
+            List<Incomes> template = new List<Incomes>
+            {
+                new Incomes(12000, "work"),
+                new Incomes(3000, "others"),
+            };
+
+            return template;
+        } 
 
 
 
