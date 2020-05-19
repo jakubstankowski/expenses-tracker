@@ -28,7 +28,8 @@ namespace ExpensesTracker.Core
             list.Add(finance);
             return "Success add!";
         }
-        
+
+       
 
         public void AddTemplate(string type)
         {
@@ -60,6 +61,11 @@ namespace ExpensesTracker.Core
         public List<decimal> GetFinanceValues()
         {
             return this.list.Select(x => x.Value).ToList();
+        }
+
+        public List<string> GetFinanceID()
+        {
+            return this.list.Select(x => x.ID).ToList();
         }
     }
 }

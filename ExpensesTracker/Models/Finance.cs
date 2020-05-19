@@ -9,15 +9,16 @@ namespace ExpensesTracker.Models
     class Finance : IFinance
     {
 
+        public string ID { get; set; }
         public decimal Value { get; set; }
         public string Category { get; set; }
 
-        public static List<string> incomesCategory = new List<string> { "work", "other" };
 
         public Finance(decimal value, string category)
         {
             this.Value = value;
             this.Category = category;
+            this.ID = GenerateUniqueID();
         }
 
         public static Finance Create(string category)
@@ -28,7 +29,13 @@ namespace ExpensesTracker.Models
                 return finance;
         }
 
-      
+        private static string GenerateUniqueID()
+        {
+            return Guid
+                .NewGuid()
+                .ToString()
+                .Substring(0, 4);
+        }
 
 
 

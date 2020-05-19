@@ -76,9 +76,10 @@ namespace ExpensesTracker.Print
         {
             for (int i = 0; i < budget.Count; i++)
             {
+                string financeID = budget.GetFinanceID()[i];
                 string financeCategory = budget.GetFinanceCategory()[i];
                 decimal financeValue = budget.GetFinanceValues()[i];
-                Console.WriteLine($"Value: {financeValue} | Category: {financeCategory}");
+                Console.WriteLine($"ID: {financeID} | Value: {financeValue} | Category: {financeCategory}");
             }
         }
 

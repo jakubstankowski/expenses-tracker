@@ -21,6 +21,7 @@ namespace ExpensesTracker.Contracts
 
         List<decimal> GetFinanceValues();
 
+        List<string> GetFinanceID();
 
     }
 }
