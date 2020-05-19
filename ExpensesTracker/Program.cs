@@ -72,13 +72,16 @@ namespace ExpensesTracker
             if (budget.Name.ToLower() == "incomes")
             {
                 IncomesCategory(budget);
+            } else
+            {
+                ExpensesCategory(budget);
             }
 
         }
 
         private static void IncomesCategory(Budget budget)
         {
-           
+          
             var option = Console.ReadKey().Key;
             switch (option)
             {
@@ -135,12 +138,11 @@ namespace ExpensesTracker
             }
         }
 
-
         public static void Add(Budget budget, string category)
         {
             try
             {
-                
+                Console.Clear();
                 string elementAdded = budget.Add(Finance.Create(category));
                 Console.WriteLine(elementAdded);
                 consolePrinter.Budget(budget);
@@ -153,7 +155,6 @@ namespace ExpensesTracker
 
         public static decimal Balance(Budget incomes, Budget expenses)
         {
-    
             return incomes.Total() - expenses.Total();
         }
     }

@@ -51,7 +51,7 @@ namespace ExpensesTracker.Print
 
         public void WholeBudget(Budget incomes, Budget expenses, decimal balance)
         {
-            Console.WriteLine("Total balance: " + balance);
+            Console.WriteLine($"Total balance: {balance}$");
         }
 
         private void PrintTotal(Budget budget)
@@ -84,15 +84,25 @@ namespace ExpensesTracker.Print
 
         void ExpensesCategory()
         {
-            
+            Console.WriteLine("Choose expenses category: ");
+            Console.WriteLine("1. Food");
+            Console.WriteLine("2. Home");
+            Console.WriteLine("3. Transport");
+            Console.WriteLine("4. Shopping");
+            Console.WriteLine("5. Hobby");
+            Console.WriteLine("6. Family");
+            Console.WriteLine("7. Health");
+            Console.WriteLine("8. Car");
+            Console.WriteLine("9. Others");
+            Console.WriteLine("0. Back");
         }
         void IncomesCategory()
         {
             Console.WriteLine("Choose incomes category: ");
             Console.WriteLine("1. Work");
             Console.WriteLine("2. Other");
-
-        }
+            Console.WriteLine("3. Back");
+         }
 
         void IMenuPrinter.ExpensesCategory()
         {
