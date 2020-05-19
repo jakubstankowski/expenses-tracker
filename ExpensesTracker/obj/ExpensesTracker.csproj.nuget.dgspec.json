@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\PROJEKTY\\htdocs\\INNE\\C#\\Początki\\ExpensesTracker\\expenses-tracker\\ExpensesTracker\\ExpensesTracker.csproj": {}
+    "P:\\PROJEKTY\\htdocs\\21 - EXPENSES-TRACKER - MAJ 2020 C#\\expenses-tracker\\ExpensesTracker\\ExpensesTracker.csproj": {}
   },
   "projects": {
-    "P:\\PROJEKTY\\htdocs\\INNE\\C#\\Początki\\ExpensesTracker\\expenses-tracker\\ExpensesTracker\\ExpensesTracker.csproj": {
+    "P:\\PROJEKTY\\htdocs\\21 - EXPENSES-TRACKER - MAJ 2020 C#\\expenses-tracker\\ExpensesTracker\\ExpensesTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\PROJEKTY\\htdocs\\INNE\\C#\\Początki\\ExpensesTracker\\expenses-tracker\\ExpensesTracker\\ExpensesTracker.csproj",
+        "projectUniqueName": "P:\\PROJEKTY\\htdocs\\21 - EXPENSES-TRACKER - MAJ 2020 C#\\expenses-tracker\\ExpensesTracker\\ExpensesTracker.csproj",
         "projectName": "ExpensesTracker",
-        "projectPath": "P:\\PROJEKTY\\htdocs\\INNE\\C#\\Początki\\ExpensesTracker\\expenses-tracker\\ExpensesTracker\\ExpensesTracker.csproj",
+        "projectPath": "P:\\PROJEKTY\\htdocs\\21 - EXPENSES-TRACKER - MAJ 2020 C#\\expenses-tracker\\ExpensesTracker\\ExpensesTracker.csproj",
         "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-        "outputPath": "P:\\PROJEKTY\\htdocs\\INNE\\C#\\Początki\\ExpensesTracker\\expenses-tracker\\ExpensesTracker\\obj\\",
+        "outputPath": "P:\\PROJEKTY\\htdocs\\21 - EXPENSES-TRACKER - MAJ 2020 C#\\expenses-tracker\\ExpensesTracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",

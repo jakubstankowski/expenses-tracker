@@ -62,7 +62,7 @@ namespace ExpensesTracker.Print
 
         private void Balance(decimal balance)
         {
-            Console.WriteLine("Total balance: " + balance);
+            Console.WriteLine("TOTAL BALANCE: " + balance);
             this.PrintLine(53);
         }
 

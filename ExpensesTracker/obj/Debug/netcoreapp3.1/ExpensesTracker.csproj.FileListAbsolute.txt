@@ -24,3 +24,16 @@ P:\PROJEKTY\htdocs\INNE\C#\Początki\ExpensesTracker\expenses-tracker\ExpensesTr
 P:\PROJEKTY\htdocs\INNE\C#\Początki\ExpensesTracker\expenses-tracker\ExpensesTracker\obj\Debug\netcoreapp3.1\ExpensesTracker.dll
 P:\PROJEKTY\htdocs\INNE\C#\Początki\ExpensesTracker\expenses-tracker\ExpensesTracker\obj\Debug\netcoreapp3.1\ExpensesTracker.pdb
 P:\PROJEKTY\htdocs\INNE\C#\Początki\ExpensesTracker\expenses-tracker\ExpensesTracker\obj\Debug\netcoreapp3.1\ExpensesTracker.genruntimeconfig.cache
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\bin\Debug\netcoreapp3.1\ExpensesTracker.exe
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\bin\Debug\netcoreapp3.1\ExpensesTracker.deps.json
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\bin\Debug\netcoreapp3.1\ExpensesTracker.runtimeconfig.json
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\bin\Debug\netcoreapp3.1\ExpensesTracker.runtimeconfig.dev.json
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\bin\Debug\netcoreapp3.1\ExpensesTracker.dll
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\bin\Debug\netcoreapp3.1\ExpensesTracker.pdb
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\obj\Debug\netcoreapp3.1\ExpensesTracker.csprojAssemblyReference.cache
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\obj\Debug\netcoreapp3.1\ExpensesTracker.csproj.CoreCompileInputs.cache
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\obj\Debug\netcoreapp3.1\ExpensesTracker.AssemblyInfoInputs.cache
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\obj\Debug\netcoreapp3.1\ExpensesTracker.AssemblyInfo.cs
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\obj\Debug\netcoreapp3.1\ExpensesTracker.dll
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\obj\Debug\netcoreapp3.1\ExpensesTracker.pdb
+P:\PROJEKTY\htdocs\21 - EXPENSES-TRACKER - MAJ 2020 C#\expenses-tracker\ExpensesTracker\obj\Debug\netcoreapp3.1\ExpensesTracker.genruntimeconfig.cache
