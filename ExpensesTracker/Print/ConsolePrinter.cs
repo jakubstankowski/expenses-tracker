@@ -15,7 +15,8 @@ namespace ExpensesTracker.Print
             Console.WriteLine("2. Expenses");
             Console.WriteLine("3. Budget Print");
             Console.WriteLine("4. Load Template Budget");
-            Console.WriteLine("5. Close");
+            Console.WriteLine("5. Save to file");
+            Console.WriteLine("6. Close");
           
         }
 

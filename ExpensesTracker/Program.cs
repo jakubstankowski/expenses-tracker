@@ -8,10 +8,13 @@ namespace ExpensesTracker
     class Program
     {
         private static ConsolePrinter consolePrinter = new ConsolePrinter();
+        private static FilePrinter filePrinter = new FilePrinter();
+
         static void Main(string[] args)
         {
             Budget incomes = new Budget("Incomes");
             Budget expenses = new Budget("Expenses");
+
 
             while (true)
             {
@@ -36,6 +39,9 @@ namespace ExpensesTracker
                         AddTemplate(incomes, expenses);
                         break;
                     case ConsoleKey.D5:
+                        filePrinter.WholeBudget(incomes, expenses, balance);
+                      break;
+                    case ConsoleKey.D6:
                         return;
 
 
